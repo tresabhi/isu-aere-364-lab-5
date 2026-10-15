@@ -24,4 +24,4 @@ while True:
     desired_left_pulsewidth_seconds = 1.5e-3
     # Assign the duty cycle using the measured PWM frequency to get an
     # accurate pulse width
-    LEFT_OUT.duty_cycle = int(desired_left_pulsewidth_seconds * 65536 * PWMfreq)
+    # LEFT_OUT.duty_cycle = int(desired_left_pulsewidth_seconds * 65536 * PWMfreq)
