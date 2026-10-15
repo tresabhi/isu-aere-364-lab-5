@@ -19,7 +19,7 @@ PWMfreq = measure_servofreq_adafruit_pca9685.measure_servofreq(
 )  # Measure actual servo frequency
 # Then let’s suppose you are commanding channel #0 (LEFT OUT):
 LEFT_OUT = servo_breakout.channels[0]
-desired_left_pulsewidth_seconds = 1.5e-3
+desired_left_pulsewidth_seconds = 2e-3
 # Assign the duty cycle using the measured PWM frequency to get an
 # accurate pulse width
 LEFT_OUT.duty_cycle = int(desired_left_pulsewidth_seconds * 65536 * PWMfreq)
