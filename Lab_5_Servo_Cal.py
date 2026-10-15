@@ -24,4 +24,4 @@ desired_left_pulsewidth_seconds = 1.5e-3
 # accurate pulse width
 LEFT_OUT.duty_cycle = int(desired_left_pulsewidth_seconds * 65536 * PWMfreq)
 while True:
-    print(type(LEFT_OUT.value))
+    print(type(LEFT_OUT))
