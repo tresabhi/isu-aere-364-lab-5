@@ -27,7 +27,7 @@ PWMfreq = measure_servofreq_adafruit_pca9685.measure_servofreq(servo_breakout,15
 while True:
     yaw, roll, pitch = sensor.euler  # degrees
     gx, gy, gz = sensor.gyro  # rad/s
-    calibrated = sensor.calibrated  # True when fully calibrated
+    calibrated = sensor.calibration_status  # True when fully calibrated
 
     print("Euler (deg)  Y: {}  R: {}  P: {}".format(yaw, roll, pitch))
     print("Gyro (rad/s) X: {}  Y: {}  Z: {}".format(gx, gy, gz))
