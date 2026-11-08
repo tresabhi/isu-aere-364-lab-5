@@ -58,6 +58,8 @@ You can enable a simulated Adafruit BMP390 pressure altitude sensor
 with:
   board.bmp3xx_i2c=True
 
+The current code is only for maintain target height and real-world testing has not been conducted. Works in theory. Code is not optimized and has slowly been built on. Structure is horrendous. 
+
 
 
 
